@@ -39,14 +39,14 @@ unsigned int mask = '*';
 
 static void putc(char c)
 {
-	while (uart->fr & TXFF)
+	while (uart->fr & TXFF)//wait if full
 		;
 	uart->dr = c;
 }
 
 static char getc()
 {
-	while (uart->fr & RXFE)
+	while (uart->fr & RXFE)//wait if empty
 		;
 	return (char)uart->dr;
 }
