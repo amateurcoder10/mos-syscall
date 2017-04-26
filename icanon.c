@@ -37,7 +37,7 @@ int main(int argc,char *argv[], char *envp[])
 	putstr("login : ");
 	for (i = 0; i < 1024; i++) {
 		buf[i] = getchar();
-		if (buf[i] == 27) break;
+		if (buf[i] == '\n') break;
 	}
 	buf[i] = '\0';
 	putstr("Secret : ");

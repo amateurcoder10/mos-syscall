@@ -8811,3 +8811,183 @@ exit
 Script done on Sunday 23 April 2017 07:01:02 PM IST
 Script started on Sunday 23 April 2017 07:13:13 PM IST
 
+Script started on Tuesday 25 April 2017 04:26:28 PM IST
+]0;pra@pra-VirtualBox: ~/2sem/mos/a3[01;32mpra@pra-VirtualBox[00m:[01;34m~/2sem/mos/a3[00m$ strace stty- [K[K -a
+execve("/bin/stty", ["stty", "-a"], [/* 72 vars */]) = 0
+brk(NULL)                               = 0x1365000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcdca3e4000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/local/lib64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib64/tls/x86_64", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib64/tls", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib64/x86_64", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib64", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib//usr/local/lib64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib//usr/local/lib64/tls/x86_64", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib//usr/local/lib64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib//usr/local/lib64/tls", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib//usr/local/lib64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib//usr/local/lib64/x86_64", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib//usr/local/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib//usr/local/lib64", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/tls/x86_64", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/tls", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/x86_64", 0x7fff7961e450) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=133132, ...}) = 0
+mmap(NULL, 133132, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcdca3c3000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1864888, ...}) = 0
+mmap(NULL, 3967392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcdc9df8000
+mprotect(0x7fcdc9fb7000, 2097152, PROT_NONE) = 0
+mmap(0x7fcdca1b7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bf000) = 0x7fcdca1b7000
+mmap(0x7fcdca1bd000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcdca1bd000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcdca3c2000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcdca3c1000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcdca3c0000
+arch_prctl(ARCH_SET_FS, 0x7fcdca3c1700) = 0
+mprotect(0x7fcdca1b7000, 16384, PROT_READ) = 0
+mprotect(0x610000, 4096, PROT_READ)     = 0
+mprotect(0x7fcdca3e6000, 4096, PROT_READ) = 0
+munmap(0x7fcdca3c3000, 133132)          = 0
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcdc9b20000
+close(3)                                = 0
+brk(NULL)                               = 0x1365000
+brk(0x1386000)                          = 0x1386000
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2995, ...}) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2995
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+open("/usr/share/locale/en_IN/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en_IN/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=619, ...}) = 0
+mmap(NULL, 619, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcdca3e3000
+close(3)                                = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+ioctl(0, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+write(1, "speed 38400 baud; rows 24; colum"..., 49speed 38400 baud; rows 24; columns 80; line = 0;
+) = 49
+write(1, "intr = ^C; quit = ^\\; erase = ^?"..., 70intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D; eol = <undef>;
+) = 70
+write(1, "eol2 = <undef>; swtch = <undef>;"..., 79eol2 = <undef>; swtch = <undef>; start = ^Q; stop = ^S; susp = ^Z; rprnt = ^R;
+) = 79
+write(1, "werase = ^W; lnext = ^V; discard"..., 58werase = ^W; lnext = ^V; discard = ^O; min = 1; time = 0;
+) = 58
+write(1, "-parenb -parodd -cmspar cs8 -hup"..., 66-parenb -parodd -cmspar cs8 -hupcl -cstopb cread -clocal -crtscts
+) = 66
+write(1, "-ignbrk -brkint -ignpar -parmrk "..., 79-ignbrk -brkint -ignpar -parmrk -inpck -istrip -inlcr -igncr icrnl ixon -ixoff
+) = 79
+write(1, "-iuclc -ixany -imaxbel iutf8\n", 29-iuclc -ixany -imaxbel iutf8
+) = 29
+write(1, "opost -olcuc -ocrnl onlcr -onocr"..., 80opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0
+) = 80
+write(1, "isig icanon iexten echo echoe ec"..., 76isig icanon iexten echo echoe echok -echonl -noflsh -xcase -tostop -echoprt
+) = 76
+write(1, "echoctl echoke -flusho -extproc\n", 32echoctl echoke -flusho -extproc
+) = 32
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+]0;pra@pra-VirtualBox: ~/2sem/mos/a3[01;32mpra@pra-VirtualBox[00m:[01;34m~/2sem/mos/a3[00m$ strace stty -icanon
+execve("/bin/stty", ["stty", "-icanon"], [/* 72 vars */]) = 0
+brk(NULL)                               = 0x25aa000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f628cd65000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/local/lib64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib64/tls/x86_64", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib64/tls", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib64/x86_64", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib64", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib//usr/local/lib64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib//usr/local/lib64/tls/x86_64", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib//usr/local/lib64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib//usr/local/lib64/tls", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib//usr/local/lib64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib//usr/local/lib64/x86_64", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib//usr/local/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib//usr/local/lib64", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/tls/x86_64", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/tls", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/x86_64", 0x7ffc850f2bc0) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=133132, ...}) = 0
+mmap(NULL, 133132, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f628cd44000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1864888, ...}) = 0
+mmap(NULL, 3967392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f628c779000
+mprotect(0x7f628c938000, 2097152, PROT_NONE) = 0
+mmap(0x7f628cb38000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bf000) = 0x7f628cb38000
+mmap(0x7f628cb3e000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f628cb3e000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f628cd43000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f628cd42000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f628cd41000
+arch_prctl(ARCH_SET_FS, 0x7f628cd42700) = 0
+mprotect(0x7f628cb38000, 16384, PROT_READ) = 0
+mprotect(0x610000, 4096, PROT_READ)     = 0
+mprotect(0x7f628cd67000, 4096, PROT_READ) = 0
+munmap(0x7f628cd44000, 133132)          = 0
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f628c4a1000
+close(3)                                = 0
+brk(NULL)                               = 0x25aa000
+brk(0x25cb000)                          = 0x25cb000
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2995, ...}) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2995
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+open("/usr/share/locale/en_IN/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en_IN/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=619, ...}) = 0
+mmap(NULL, 619, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f628cd64000
+close(3)                                = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig -icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig -icanon echo ...}) = 0
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+]0;pra@pra-VirtualBox: ~/2sem/mos/a3[01;32mpra@pra-VirtualBox[00m:[01;34m~/2sem/mos/a3[00m$ exit
+exit
+
+Script done on Tuesday 25 April 2017 04:29:33 PM IST
